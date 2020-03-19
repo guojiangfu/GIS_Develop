@@ -19,6 +19,10 @@ Lesson_3屏幕坐标与地图坐标，本次的主要修改是当绘图坐标值
 
 ![Lesson_3](https://i.loli.net/2020/03/17/IeZU7HpsOdGmgNS.png)
 
+> 坐标转换的图解：
+>
+> ![](https://i.loli.net/2020/03/18/sPp9wOAZTi8VEtl.png)
+
 #### 4、Lesson_4
 
 Lesson_4在lesson_3的时候我们使用四个坐标极值来确定地图范围，但是这样操作有一个比较大的弊端，用户不太好确定输入多少比较合适，在本次修改中主要解决这个问题，提供一种更加便捷的浏览机制；
@@ -37,6 +41,8 @@ Lesson_5读取了点实体的shape文件，定义了layer类；
 
 Lesson_6本次主要从shapefile中读取线和面；
 
+#### 7、Lesson_7 
 
+实现了读取dbf属性数据；
 
 > Data文件夹里存放了需要用到的演示数据；
