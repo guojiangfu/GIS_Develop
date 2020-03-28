@@ -45,7 +45,7 @@ namespace Lesson_6
             }
             layer = GISShapefile.ReadShapefile(openFileDialog.FileName);
             layer.DrawAttributeOrNot = false;
-            MessageBox.Show("read " + layer.FeatureCount() + " point objects.");
+            MessageBox.Show("read " + layer.FeatureCount() + " objects.");
             view.UpdateExtent(layer.Extent);
             UpdateMap();
         }

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 
 namespace MyGIS
 {
-    class GISVertex
+    public class GISVertex
     {
         public double x;
         public double y;
@@ -26,7 +28,7 @@ namespace MyGIS
             y = v.y;
         }
     }
-    class GISPoint : GISSpatial
+    public class GISPoint : GISSpatial
     {
         public GISPoint(GISVertex onevertex)
         {
@@ -43,7 +45,7 @@ namespace MyGIS
             return centroid.Distance(anothervertex);
         }
     }
-    class GISLine : GISSpatial
+    public class GISLine : GISSpatial
     {
         List<GISVertex> Vertexs;
         public double Length;
@@ -68,7 +70,7 @@ namespace MyGIS
             return Vertexs[Vertexs.Count - 1];
         }
     }
-    class GISPolygon : GISSpatial
+    public class GISPolygon : GISSpatial
     {
         List<GISVertex> Vertexs;
         public double Area;
@@ -86,7 +88,7 @@ namespace MyGIS
             graphics.DrawPolygon(new Pen(Color.White,2),points);
         }
     }
-    class GISFeature
+    public class GISFeature
     {
         public GISSpatial spatialpart;
         public GISAttribute attributepart;
@@ -108,7 +110,7 @@ namespace MyGIS
             return attributepart.GetValue(index);
         }
     }
-    class GISAttribute
+    public class GISAttribute
     {
         ArrayList values = new ArrayList();
         public void AddValue(object o)
@@ -125,13 +127,13 @@ namespace MyGIS
             graphics.DrawString(values[index].ToString(), new Font("宋体", 20), new SolidBrush(Color.Green), new PointF(screenpoint.X, screenpoint.Y));
         }
     }
-    abstract class GISSpatial
+    public  abstract class GISSpatial
     {
         public GISVertex centroid;//空间实体的中心点
         public GISExtent extent;//空间范围（最小外接矩形）
         public abstract void draw(Graphics graphics, GISView view);
     }
-    class GISExtent
+    public class GISExtent
     {
         public GISVertex bottomleft;
         public GISVertex upright;
@@ -219,7 +221,7 @@ namespace MyGIS
             bottomleft.CopyFrom(extent.bottomleft);
         }
     }
-    class GISView
+    public class GISView
     {
         GISExtent CurrentMapExtent;//显示的地图范围
         Rectangle MapWindowSize;//绘图窗口的大小
@@ -271,11 +273,11 @@ namespace MyGIS
             Update(CurrentMapExtent, MapWindowSize);
         }
     }
-    enum GISMapAction
+    public enum GISMapAction
     {
         zoomin, zoomout, moveup, movedown, moveleft, moveright
     };
-    class GISShapefile
+    public class GISShapefile
     {
         [StructLayout(LayoutKind.Sequential, Pack = 4)]
         struct ShapefileHeader
@@ -304,7 +306,10 @@ namespace MyGIS
             ShapefileHeader sfh = ReadFileHeader(br);
             SHAPETYPE ShapeType = (SHAPETYPE)Enum.Parse(typeof(SHAPETYPE), sfh.ShapeType.ToString());
             GISExtent extent = new GISExtent(sfh.Xmax, sfh.Xmin, sfh.Xmin, sfh.Ymin);
-            GISLayer layer = new GISLayer(shapefilename, ShapeType, extent);
+            string dbffilename = shapefilename.Replace(".shp",".dbf");
+            DataTable table = ReadDBF(dbffilename);
+            GISLayer layer = new GISLayer(shapefilename, ShapeType, extent, ReadFields(table));
+            int rowindex = 0;
             while (br.PeekChar() != -1)
             {
                 RecordHeader rh = ReadRecordHeader(br);
@@ -313,7 +318,7 @@ namespace MyGIS
                 if (ShapeType == SHAPETYPE.point)
                 {
                     GISPoint onepoint = ReadPoint(RecordContent);
-                    GISFeature onefeature = new GISFeature(onepoint, new GISAttribute());
+                    GISFeature onefeature = new GISFeature(onepoint,ReadAtrribute(table, rowindex));
                     layer.AddFeature(onefeature);
                 }
                 if (ShapeType == SHAPETYPE.line)
@@ -321,7 +326,7 @@ namespace MyGIS
                     List<GISLine> lines = ReadLines(RecordContent);
                     for (int i = 0; i < lines.Count; i++)
                     {
-                        GISFeature onefeature = new GISFeature(lines[i], new GISAttribute());
+                        GISFeature onefeature = new GISFeature(lines[i], ReadAtrribute(table, rowindex));
                         layer.AddFeature(onefeature);
                     }
                 }
@@ -330,10 +335,11 @@ namespace MyGIS
                     List<GISPolygon> polygons = ReadPolygon(RecordContent);
                     for (int i = 0; i < polygons.Count; i++)
                     {
-                        GISFeature onefeature = new GISFeature(polygons[i], new GISAttribute());
+                        GISFeature onefeature = new GISFeature(polygons[i], ReadAtrribute(table, rowindex));
                         layer.AddFeature(onefeature);
                     }
                 }
+                rowindex++;
             }
             br.Close();
             fsr.Close();
@@ -423,14 +429,49 @@ namespace MyGIS
             }
             return polygons;
         }
+        static  DataTable ReadDBF(string dbffilename)
+        {
+           FileInfo f = new FileInfo(dbffilename);
+            DataSet ds = null;
+            string constr = "Provider = Microsoft.Jet.OLEDB.4.0; Data Source="+f.DirectoryName + ";Extended Properties = DBASE III";
+            using (OleDbConnection con = new OleDbConnection(constr))
+            {
+                var sql = "select * from " + f.Name;
+                OleDbCommand cmd = new OleDbCommand(sql, con);
+                con.Open();
+                ds = new DataSet();
+                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                da.Fill(ds);
+            }
+            return ds.Tables[0];
+        }
+        static List<GISField> ReadFields(DataTable table)
+        {
+            List<GISField> fields = new List<GISField>();
+            foreach (DataColumn column in table.Columns)
+            {
+                fields.Add(new GISField(column.DataType, column.ColumnName));
+            }
+            return fields;
+        }
+        static GISAttribute ReadAtrribute(DataTable table, int RowIndex)
+        {
+            GISAttribute attribute = new GISAttribute();
+            DataRow row = table.Rows[RowIndex];
+            for (int i = 0; i < table.Columns.Count; i++)
+            {
+                attribute.AddValue(row[i]);
+            }
+            return attribute;
+        }
     }
-    enum SHAPETYPE
+    public enum SHAPETYPE
     {
         point = 1,
         line = 3,
         polygon = 5
     };
-    class GISLayer
+    public  class GISLayer
     {
         public string Name;
         public GISExtent Extent;
@@ -438,6 +479,14 @@ namespace MyGIS
         public int LabelIndex;
         public SHAPETYPE ShapeType;
         List<GISFeature> Features = new List<GISFeature>();
+        public List<GISField> Fields;
+        public GISLayer(string _name, SHAPETYPE _shapetype, GISExtent _extent, List<GISField> _fields)
+        {
+            Name = _name;
+            ShapeType = _shapetype;
+            Extent = _extent;
+            Fields = _fields;
+        }
         public GISLayer(string _name, SHAPETYPE _shapetype, GISExtent _extent)
         {
             Name = _name;
@@ -459,8 +508,12 @@ namespace MyGIS
         {
             return Features.Count;
         }
+        public GISFeature GetFeature(int i)
+        {
+            return Features[i];
+        }
     }
-    class GISTools
+    public class GISTools
     {
         public static GISVertex CalculateCentroid(List<GISVertex> _vertexs)
         {
@@ -528,5 +581,24 @@ namespace MyGIS
             }
             return points;
         }
+    }
+    public class GISField
+    {
+        public Type datatype;
+        public string name;
+        public GISField(Type _dt, string _name)
+        {
+            datatype = _dt;
+            name = _name;
+        }
+    }
+    public class GISMyFile
+    {
+        [StructLayout(LayoutKind.Sequential, Pack =4)]
+        struct MyFileHeader
+        {
+            public double MinX, MinY, MaxX, MaxY;
+            public int FeatureCount, ShapeType, FieldCount;
+        };
     }
 }

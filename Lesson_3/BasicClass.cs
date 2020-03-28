@@ -167,7 +167,7 @@ namespace MyGIS
         }
         public Point ToScreenPoint(GISVertex onevertex)
         {
-            double ScreenX = (onevertex.x - MapMinY) / ScaleX;
+            double ScreenX = (onevertex.x - MapMinX) / ScaleX;
             double ScreenY = WinH - (onevertex.y - MapMinY) / ScaleY;
             return new Point((int)ScreenX, (int)ScreenY);
         }

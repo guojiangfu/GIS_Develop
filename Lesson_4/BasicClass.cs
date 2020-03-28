@@ -101,8 +101,6 @@ namespace MyGIS
     {
         public GISVertex bottomleft;
         public GISVertex upright;
-        double ZoomingFactor = 2;
-        double MovingFactor = 0.25;
         public GISExtent(GISVertex _bottomleft, GISVertex _upright)
         {
             bottomleft = _bottomleft;
@@ -137,6 +135,9 @@ namespace MyGIS
         {
             return upright.y - bottomleft.y;
         }
+
+        double ZoomingFactor = 2;
+        double MovingFactor = 0.25;
         public void ChangeExtent(GISMapAction action)
         {
             double newminx = bottomleft.x;
@@ -149,13 +150,13 @@ namespace MyGIS
                     newminx = ((getMinX() + getMaxX()) - getWidth() / ZoomingFactor) / 2;
                     newminy = ((getMinY() + getMaxY()) - getHeight() / ZoomingFactor) / 2;
                     newmaxx = ((getMinX() + getMaxX()) + getWidth() / ZoomingFactor) / 2;
-                    newminx = ((getMinY() + getMaxY()) + getHeight() / ZoomingFactor) / 2;
+                    newmaxy = ((getMinY() + getMaxY()) + getHeight() / ZoomingFactor) / 2;
                     break;
                 case GISMapAction.zoomout:
                     newminx = ((getMinX() + getMaxX()) - getWidth() * ZoomingFactor) / 2;
                     newminy = ((getMinY() + getMaxY()) - getHeight() * ZoomingFactor) / 2;
                     newmaxx = ((getMinX() + getMaxX()) + getWidth() * ZoomingFactor) / 2;
-                    newminx = ((getMinY() + getMaxY()) + getHeight() * ZoomingFactor) / 2;
+                    newmaxy = ((getMinY() + getMaxY()) + getHeight() * ZoomingFactor) / 2;
                     break;
                 case GISMapAction.moveup:
                     newminy = getMinY() - getHeight() * MovingFactor;
@@ -167,11 +168,11 @@ namespace MyGIS
                     break;
                 case GISMapAction.moveleft:
                     newminx = getMinX() + getWidth() * MovingFactor;
-                    newmaxy = getMaxX() + getWidth() * MovingFactor;
+                    newmaxx = getMaxX() + getWidth() * MovingFactor;
                     break;
                 case GISMapAction.moveright:
                     newminx = getMinX() - getWidth() * MovingFactor;
-                    newmaxy = getMaxX() - getWidth() * MovingFactor;
+                    newmaxx = getMaxX() - getWidth() * MovingFactor;
                     break;
             }
                 upright.x = newmaxx;
@@ -211,7 +212,7 @@ namespace MyGIS
         }
         public Point ToScreenPoint(GISVertex onevertex)
         {
-            double ScreenX = (onevertex.x - MapMinY) / ScaleX;
+            double ScreenX = (onevertex.x - MapMinX) / ScaleX;
             double ScreenY = WinH - (onevertex.y - MapMinY) / ScaleY;
             return new Point((int)ScreenX, (int)ScreenY);
         }

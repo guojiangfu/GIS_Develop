@@ -1,4 +1,4 @@
-﻿namespace Lesson_7
+﻿namespace Lesson_8
 {
     partial class Form1
     {
@@ -153,7 +153,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Lesson_7 从Shapefile中读取属性数据";
+            this.Text = "Lesson_8 读取自己的空间数据文件";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
             this.ResumeLayout(false);

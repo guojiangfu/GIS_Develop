@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MyGIS;
 
-namespace Lesson_5
+namespace Lesson_8
 {
     public partial class Form1 : Form
     {
@@ -28,12 +28,26 @@ namespace Lesson_5
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string path1 = @"..\..\..\Data\Shapefile\shape1\jyg.shp";
-            string path2 = @"..\..\..\Data\Shapefile\shape2\country.shp";
-            GISShapefile sf = new GISShapefile();
-            layer = sf.ReadShapefile(path1);
+            //string path1 = @"..\..\..\Data\Shapefile\shape1\jyg.shp";
+            //string path2 = @"..\..\..\Data\Shapefile\shape2\country.shp";
+            //GISShapefile sf = new GISShapefile();
+            //layer = sf.ReadShapefile(path1);
+            //layer.DrawAttributeOrNot = false;
+            //MessageBox.Show("read " + layer.FeatureCount() + " point objects.");
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Shapefile文件|*.shp";
+            openFileDialog.RestoreDirectory = false;
+            openFileDialog.FilterIndex = 1;
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+            layer = GISShapefile.ReadShapefile(openFileDialog.FileName);
             layer.DrawAttributeOrNot = false;
             MessageBox.Show("read " + layer.FeatureCount() + " point objects.");
+            view.UpdateExtent(layer.Extent);
+            UpdateMap();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -44,7 +58,7 @@ namespace Lesson_5
         private void UpdateMap()
         {
             Graphics graphics = CreateGraphics();
-            graphics.FillRectangle(new SolidBrush(Color.Black), ClientRectangle);
+            graphics.FillRectangle(new SolidBrush(Color.Pink), ClientRectangle);
             layer.draw(graphics, view);
         }
 
@@ -64,6 +78,13 @@ namespace Lesson_5
             else if ((Button)sender == button8) action = GISMapAction.moveright;
             view.ChangeView(action);
             UpdateMap();
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form2 myForm = new Form2(layer);
+            myForm.Show();
         }
     }
 }
