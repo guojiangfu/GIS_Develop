@@ -1,0 +1,2325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.40716211695121,
+          28.62898489684767
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "CNTYPT_": 1961.0,
+        "CNTYPT_ID": 2383.0,
+        "NAME": "\u6c34\u5bcc\u53bf",
+        "PYNAME": "Shuifu Xian",
+        "CLASS": "AI",
+        "ID": 3344,
+        "ADCODE93": 532131.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.95509489066876,
+          28.59617230163508
+        ]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "CNTYPT_": 1965.0,
+        "CNTYPT_ID": 2289.0,
+        "NAME": "\u7ee5\u6c5f\u53bf",
+        "PYNAME": "Suijiang Xian",
+        "CLASS": "AI",
+        "ID": 3255,
+        "ADCODE93": 532127.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.91455349209707,
+          28.49010128645
+        ]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "CNTYPT_": 1980.0,
+        "CNTYPT_ID": 1344.0,
+        "NAME": "\u5fb7\u94a6\u53bf",
+        "PYNAME": "Deeqeen Xian",
+        "CLASS": "AI",
+        "ID": 1993,
+        "ADCODE93": 533422.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.63516489906527,
+          28.237645792636783
+        ]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "CNTYPT_": 2022.0,
+        "CNTYPT_ID": 2320.0,
+        "NAME": "\u6c38\u5584\u53bf",
+        "PYNAME": "Yongshan Xian",
+        "CLASS": "AI",
+        "ID": 3283,
+        "ADCODE93": 532126.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.24753826637078,
+          28.074454665214546
+        ]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "CNTYPT_": 2042.0,
+        "CNTYPT_ID": 2428.0,
+        "NAME": "\u76d0\u6d25\u53bf",
+        "PYNAME": "Yanjin Xian",
+        "CLASS": "AI",
+        "ID": 3386,
+        "ADCODE93": 532124.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.047236735951,
+          27.841377488195462
+        ]
+      },
+      "properties": {
+        "OBJECTID": 6,
+        "CNTYPT_": 2067.0,
+        "CNTYPT_ID": 282.0,
+        "NAME": "\u5a01\u4fe1\u53bf",
+        "PYNAME": "Weixin Xian",
+        "CLASS": "AI",
+        "ID": 1279,
+        "ADCODE93": 532130.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.70670823175891,
+          27.816202033681805
+        ]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "CNTYPT_": 2069.0,
+        "CNTYPT_ID": 78.0,
+        "NAME": "\u4e2d\u7538\u53bf",
+        "PYNAME": "Zhongdian Xian",
+        "CLASS": "AI",
+        "ID": 1077,
+        "ADCODE93": 533421.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89433904519706,
+          27.75232562260669
+        ]
+      },
+      "properties": {
+        "OBJECTID": 8,
+        "CNTYPT_": 2080.0,
+        "CNTYPT_ID": 108.0,
+        "NAME": "\u5927\u5173\u53bf",
+        "PYNAME": "Daguan Xian",
+        "CLASS": "AI",
+        "ID": 1110,
+        "ADCODE93": 532125.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.66155581591812,
+          27.746117107112013
+        ]
+      },
+      "properties": {
+        "OBJECTID": 9,
+        "CNTYPT_": 2082.0,
+        "CNTYPT_ID": 21.0,
+        "NAME": "\u8d21\u5c71\u72ec\u9f99\u65cf\u6012\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Gongshan Derungzu Nuzu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1021,
+        "ADCODE93": 533324.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.04992507026759,
+          27.628394557553577
+        ]
+      },
+      "properties": {
+        "OBJECTID": 10,
+        "CNTYPT_": 2097.0,
+        "CNTYPT_ID": 206.0,
+        "NAME": "\u5f5d\u826f\u53bf",
+        "PYNAME": "Yiliang Xian",
+        "CLASS": "AI",
+        "ID": 1204,
+        "ADCODE93": 532129.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.86946290307355,
+          27.439973099886856
+        ]
+      },
+      "properties": {
+        "OBJECTID": 11,
+        "CNTYPT_": 2116.0,
+        "CNTYPT_ID": 222.0,
+        "NAME": "\u9547\u96c4\u53bf",
+        "PYNAME": "Zhenxiong Xian",
+        "CLASS": "AI",
+        "ID": 1219,
+        "ADCODE93": 532128.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.84938515642818,
+          27.287145930401493
+        ]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "CNTYPT_": 2134.0,
+        "CNTYPT_ID": 266.0,
+        "NAME": "\u5b81\u8497\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Ninglang Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1263,
+        "ADCODE93": 533224.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.5448902819706,
+          27.1980489575177
+        ]
+      },
+      "properties": {
+        "OBJECTID": 13,
+        "CNTYPT_": 2145.0,
+        "CNTYPT_ID": 157.0,
+        "NAME": "\u9c81\u7538\u53bf",
+        "PYNAME": "Ludian Xian",
+        "CLASS": "AI",
+        "ID": 1157,
+        "ADCODE93": 532122.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.28509015091976,
+          27.18506667115662
+        ]
+      },
+      "properties": {
+        "OBJECTID": 14,
+        "CNTYPT_": 2146.0,
+        "CNTYPT_ID": 152.0,
+        "NAME": "\u7ef4\u897f\u5088\u50f3\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Weixi Lisuzu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1150,
+        "ADCODE93": 533423.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.91996833534586,
+          26.915610864946245
+        ]
+      },
+      "properties": {
+        "OBJECTID": 15,
+        "CNTYPT_": 2171.0,
+        "CNTYPT_ID": 565.0,
+        "NAME": "\u5de7\u5bb6\u53bf",
+        "PYNAME": "Qiaojia Xian",
+        "CLASS": "AI",
+        "ID": 1569,
+        "ADCODE93": 532123.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.87950795582879,
+          26.89978966355426
+        ]
+      },
+      "properties": {
+        "OBJECTID": 16,
+        "CNTYPT_": 2177.0,
+        "CNTYPT_ID": 438.0,
+        "NAME": "\u798f\u8d21\u53bf",
+        "PYNAME": "Fugong Xian",
+        "CLASS": "AI",
+        "ID": 1432,
+        "ADCODE93": 533323.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.23577309173783,
+          26.87367453443187
+        ]
+      },
+      "properties": {
+        "OBJECTID": 17,
+        "CNTYPT_": 2182.0,
+        "CNTYPT_ID": 628.0,
+        "NAME": "\u4e3d\u6c5f\u7eb3\u897f\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Lijiang Naxizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1618,
+        "ADCODE93": 533221.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.74781916994306,
+          26.688388998292112
+        ]
+      },
+      "properties": {
+        "OBJECTID": 18,
+        "CNTYPT_": 2198.0,
+        "CNTYPT_ID": 657.0,
+        "NAME": "\u6c38\u80dc\u53bf",
+        "PYNAME": "Yongsheng Xian",
+        "CLASS": "AI",
+        "ID": 1646,
+        "ADCODE93": 533222.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.26366494487604,
+          26.629268524964573
+        ]
+      },
+      "properties": {
+        "OBJECTID": 19,
+        "CNTYPT_": 2208.0,
+        "CNTYPT_ID": 803.0,
+        "NAME": "\u534e\u576a\u53bf",
+        "PYNAME": "Huaping Xian",
+        "CLASS": "AI",
+        "ID": 1789,
+        "ADCODE93": 533223.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.17907523907246,
+          26.55848348518822
+        ]
+      },
+      "properties": {
+        "OBJECTID": 20,
+        "CNTYPT_": 2221.0,
+        "CNTYPT_ID": 673.0,
+        "NAME": "\u9e64\u5e86\u53bf",
+        "PYNAME": "Heqing Xian",
+        "CLASS": "AI",
+        "ID": 1661,
+        "ADCODE93": 532932.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.89854609780241,
+          26.530023360384575
+        ]
+      },
+      "properties": {
+        "OBJECTID": 21,
+        "CNTYPT_": 2224.0,
+        "CNTYPT_ID": 537.0,
+        "NAME": "\u5251\u5ddd\u53bf",
+        "PYNAME": "Jianchuan Xian",
+        "CLASS": "AI",
+        "ID": 1530,
+        "ADCODE93": 532931.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.40589197460986,
+          26.433654403022047
+        ]
+      },
+      "properties": {
+        "OBJECTID": 22,
+        "CNTYPT_": 2233.0,
+        "CNTYPT_ID": 552.0,
+        "NAME": "\u5170\u576a\u767d\u65cf\u666e\u7c73\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Lanping Baizu Pumizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1544,
+        "ADCODE93": 533325.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.29434922532312,
+          26.41964496859572
+        ]
+      },
+      "properties": {
+        "OBJECTID": 23,
+        "CNTYPT_": 2236.0,
+        "CNTYPT_ID": 683.0,
+        "NAME": "\u4f1a\u6cfd\u53bf",
+        "PYNAME": "Huize Xian",
+        "CLASS": "AI",
+        "ID": 1687,
+        "ADCODE93": 532233.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.10609742119226,
+          26.217941801593497
+        ]
+      },
+      "properties": {
+        "OBJECTID": 24,
+        "CNTYPT_": 2254.0,
+        "CNTYPT_ID": 802.0,
+        "NAME": "\u5ba3\u5a01\u53bf",
+        "PYNAME": "Xuanwei Xian",
+        "CLASS": "AI",
+        "ID": 1802,
+        "ADCODE93": 532224.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.94903640264357,
+          26.111803958687688
+        ]
+      },
+      "properties": {
+        "OBJECTID": 25,
+        "CNTYPT_": 2266.0,
+        "CNTYPT_ID": 598.0,
+        "NAME": "\u6d31\u6e90\u53bf",
+        "PYNAME": "Eryuan Xian",
+        "CLASS": "AI",
+        "ID": 1589,
+        "ADCODE93": 532930.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.67395475354459,
+          26.06166464484545
+        ]
+      },
+      "properties": {
+        "OBJECTID": 26,
+        "CNTYPT_": 2269.0,
+        "CNTYPT_ID": 894.0,
+        "NAME": "\u6c38\u4ec1\u53bf",
+        "PYNAME": "Yongren Xian",
+        "CLASS": "AI",
+        "ID": 1878,
+        "ADCODE93": 532327.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.81859798184973,
+          25.981934015568697
+        ]
+      },
+      "properties": {
+        "OBJECTID": 27,
+        "CNTYPT_": 2275.0,
+        "CNTYPT_ID": 915.0,
+        "NAME": "\u6cf8\u6c34\u53bf",
+        "PYNAME": "Lushui Xian",
+        "CLASS": "AI",
+        "ID": 1911,
+        "ADCODE93": 533321.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.37470468273204,
+          25.89229093657724
+        ]
+      },
+      "properties": {
+        "OBJECTID": 28,
+        "CNTYPT_": 2285.0,
+        "CNTYPT_ID": 1037.0,
+        "NAME": "\u4e91\u9f99\u53bf",
+        "PYNAME": "Yunlong Xian",
+        "CLASS": "AI",
+        "ID": 2032,
+        "ADCODE93": 532929.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57762549042548,
+          25.829395671446946
+        ]
+      },
+      "properties": {
+        "OBJECTID": 29,
+        "CNTYPT_": 2293.0,
+        "CNTYPT_ID": 1197.0,
+        "NAME": "\u5bbe\u5ddd\u53bf",
+        "PYNAME": "Binchuan Xian",
+        "CLASS": "AI",
+        "ID": 2189,
+        "ADCODE93": 532924.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.32507505971455,
+          25.72486530461532
+        ]
+      },
+      "properties": {
+        "OBJECTID": 30,
+        "CNTYPT_": 2306.0,
+        "CNTYPT_ID": 1371.0,
+        "NAME": "\u5927\u59da\u53bf",
+        "PYNAME": "Dayao Xian",
+        "CLASS": "AI",
+        "ID": 2358,
+        "ADCODE93": 532326.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.87637992235233,
+          25.703136986513528
+        ]
+      },
+      "properties": {
+        "OBJECTID": 31,
+        "CNTYPT_": 2308.0,
+        "CNTYPT_ID": 1376.0,
+        "NAME": "\u5143\u8c0b\u53bf",
+        "PYNAME": "Yuanmou Xian",
+        "CLASS": "AI",
+        "ID": 2362,
+        "ADCODE93": 532328.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.24836497444147,
+          25.67183012257732
+        ]
+      },
+      "properties": {
+        "OBJECTID": 32,
+        "CNTYPT_": 2311.0,
+        "CNTYPT_ID": 1331.0,
+        "NAME": "\u5bcc\u6e90\u53bf",
+        "PYNAME": "Fuyuan Xian",
+        "CLASS": "AI",
+        "ID": 2370,
+        "ADCODE93": 532225.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.96543271237942,
+          25.6530271299643
+        ]
+      },
+      "properties": {
+        "OBJECTID": 33,
+        "CNTYPT_": 2313.0,
+        "CNTYPT_ID": 1072.0,
+        "NAME": "\u6f3e\u6fde\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Yangbi Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2066,
+        "ADCODE93": 532922.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.46145415092315,
+          25.561800510354487
+        ]
+      },
+      "properties": {
+        "OBJECTID": 34,
+        "CNTYPT_": 2319.0,
+        "CNTYPT_ID": 1155.0,
+        "NAME": "\u7984\u529d\u5f5d\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Luchuan Yizu Miaozu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2187,
+        "ADCODE93": 530128.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.25343244989813,
+          25.56135504377778
+        ]
+      },
+      "properties": {
+        "OBJECTID": 35,
+        "CNTYPT_": 2320.0,
+        "CNTYPT_ID": 1247.0,
+        "NAME": "\u5bfb\u7538\u56de\u65cf\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Xundian Huizu Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2281,
+        "ADCODE93": 532231.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.39805594894119,
+          25.535000578083725
+        ]
+      },
+      "properties": {
+        "OBJECTID": 36,
+        "CNTYPT_": 2322.0,
+        "CNTYPT_ID": 1159.0,
+        "NAME": "\u6b66\u5b9a\u53bf",
+        "PYNAME": "Wuding Xian",
+        "CLASS": "AI",
+        "ID": 2190,
+        "ADCODE93": 532329.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.2422277535029,
+          25.51289042313681
+        ]
+      },
+      "properties": {
+        "OBJECTID": 37,
+        "CNTYPT_": 2324.0,
+        "CNTYPT_ID": 1410.0,
+        "NAME": "\u59da\u5b89\u53bf",
+        "PYNAME": "Yao'an Xian",
+        "CLASS": "AI",
+        "ID": 2395,
+        "ADCODE93": 532325.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.55876663732397,
+          25.478245212875265
+        ]
+      },
+      "properties": {
+        "OBJECTID": 38,
+        "CNTYPT_": 2328.0,
+        "CNTYPT_ID": 1255.0,
+        "NAME": "\u7965\u4e91\u53bf",
+        "PYNAME": "Xiangyun Xian",
+        "CLASS": "AI",
+        "ID": 2245,
+        "ADCODE93": 532923.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.5191563420521,
+          25.462324104000402
+        ]
+      },
+      "properties": {
+        "OBJECTID": 39,
+        "CNTYPT_": 2330.0,
+        "CNTYPT_ID": 1096.0,
+        "NAME": "\u6c38\u5e73\u53bf",
+        "PYNAME": "Yongping Xian",
+        "CLASS": "AI",
+        "ID": 2089,
+        "ADCODE93": 532928.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.57991384690234,
+          25.427596590484768
+        ]
+      },
+      "properties": {
+        "OBJECTID": 40,
+        "CNTYPT_": 2335.0,
+        "CNTYPT_ID": 1261.0,
+        "NAME": "\u9a6c\u9f99\u53bf",
+        "PYNAME": "Malong Xian",
+        "CLASS": "AI",
+        "ID": 2294,
+        "ADCODE93": 532223.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.49396866218711,
+          25.341396313172993
+        ]
+      },
+      "properties": {
+        "OBJECTID": 41,
+        "CNTYPT_": 2344.0,
+        "CNTYPT_ID": 1277.0,
+        "NAME": "\u5f25\u6e21\u53bf",
+        "PYNAME": "Midu Xian",
+        "CLASS": "AI",
+        "ID": 2266,
+        "ADCODE93": 532925.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.03303899691684,
+          25.34050563093041
+        ]
+      },
+      "properties": {
+        "OBJECTID": 42,
+        "CNTYPT_": 2345.0,
+        "CNTYPT_ID": 1267.0,
+        "NAME": "\u5d69\u660e\u53bf",
+        "PYNAME": "Songming Xian",
+        "CLASS": "AI",
+        "ID": 2299,
+        "ADCODE93": 530127.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.5353700786888,
+          25.31669393172433
+        ]
+      },
+      "properties": {
+        "OBJECTID": 43,
+        "CNTYPT_": 2347.0,
+        "CNTYPT_ID": 1439.0,
+        "NAME": "\u725f\u5b9a\u53bf",
+        "PYNAME": "Muding Xian",
+        "CLASS": "AI",
+        "ID": 2423,
+        "ADCODE93": 532323.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.48974409971714,
+          25.231470551960115
+        ]
+      },
+      "properties": {
+        "OBJECTID": 44,
+        "CNTYPT_": 2353.0,
+        "CNTYPT_ID": 1186.0,
+        "NAME": "\u5bcc\u6c11\u53bf",
+        "PYNAME": "Fumin Xian",
+        "CLASS": "AI",
+        "ID": 2216,
+        "ADCODE93": 530124.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.30867395296269,
+          25.229207253389973
+        ]
+      },
+      "properties": {
+        "OBJECTID": 45,
+        "CNTYPT_": 2354.0,
+        "CNTYPT_ID": 1299.0,
+        "NAME": "\u5dcd\u5c71\u5f5d\u65cf\u56de\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Weishan Yizu Huizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2287,
+        "ADCODE93": 532927.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.27672741119193,
+          25.19572543938051
+        ]
+      },
+      "properties": {
+        "OBJECTID": 46,
+        "CNTYPT_": 2356.0,
+        "CNTYPT_ID": 1458.0,
+        "NAME": "\u5357\u534e\u53bf",
+        "PYNAME": "Nanhua Xian",
+        "CLASS": "AI",
+        "ID": 2441,
+        "ADCODE93": 532324.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.07984549703065,
+          25.14658079908503
+        ]
+      },
+      "properties": {
+        "OBJECTID": 47,
+        "CNTYPT_": 2359.0,
+        "CNTYPT_ID": 1197.0,
+        "NAME": "\u7984\u4e30\u53bf",
+        "PYNAME": "Lufeng Xian",
+        "CLASS": "AI",
+        "ID": 2226,
+        "ADCODE93": 532331.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52537829345027,
+          25.05478890971432
+        ]
+      },
+      "properties": {
+        "OBJECTID": 48,
+        "CNTYPT_": 2372.0,
+        "CNTYPT_ID": 1322.0,
+        "NAME": "\u5357\u6da7\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Nanjian Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2309,
+        "ADCODE93": 532926.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.66223256490008,
+          25.03146020849124
+        ]
+      },
+      "properties": {
+        "OBJECTID": 49,
+        "CNTYPT_": 2378.0,
+        "CNTYPT_ID": 1292.0,
+        "NAME": "\u9646\u826f\u53bf",
+        "PYNAME": "Luliang Xian",
+        "CLASS": "AI",
+        "ID": 2323,
+        "ADCODE93": 532228.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.49482421774587,
+          25.023536977267042
+        ]
+      },
+      "properties": {
+        "OBJECTID": 50,
+        "CNTYPT_": 2379.0,
+        "CNTYPT_ID": 1022.0,
+        "NAME": "\u817e\u51b2\u53bf",
+        "PYNAME": "Tengchong Xian",
+        "CLASS": "AI",
+        "ID": 2017,
+        "ADCODE93": 533023.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.47385520995329,
+          24.917644343505742
+        ]
+      },
+      "properties": {
+        "OBJECTID": 51,
+        "CNTYPT_": 2392.0,
+        "CNTYPT_ID": 1670.0,
+        "NAME": "\u5b89\u5b81\u53bf",
+        "PYNAME": "Anning Xian",
+        "CLASS": "AI",
+        "ID": 2716,
+        "ADCODE93": 530123.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.14169701983792,
+          24.910270178957376
+        ]
+      },
+      "properties": {
+        "OBJECTID": 52,
+        "CNTYPT_": 2393.0,
+        "CNTYPT_ID": 1763.0,
+        "NAME": "\u5b9c\u826f\u53bf",
+        "PYNAME": "Yiliang Xian",
+        "CLASS": "AI",
+        "ID": 2807,
+        "ADCODE93": 530125.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.798686387906,
+          24.900546341353845
+        ]
+      },
+      "properties": {
+        "OBJECTID": 53,
+        "CNTYPT_": 2395.0,
+        "CNTYPT_ID": 1674.0,
+        "NAME": "\u5448\u8d21\u53bf",
+        "PYNAME": "Chenggong Xian",
+        "CLASS": "AI",
+        "ID": 2719,
+        "ADCODE93": 530121.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.30312552198046,
+          24.8822938129631
+        ]
+      },
+      "properties": {
+        "OBJECTID": 54,
+        "CNTYPT_": 2397.0,
+        "CNTYPT_ID": 1845.0,
+        "NAME": "\u7f57\u5e73\u53bf",
+        "PYNAME": "Luoping Xian",
+        "CLASS": "AI",
+        "ID": 2895,
+        "ADCODE93": 532226.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.99098411780494,
+          24.831068392402642
+        ]
+      },
+      "properties": {
+        "OBJECTID": 55,
+        "CNTYPT_": 2399.0,
+        "CNTYPT_ID": 1770.0,
+        "NAME": "\u5e08\u5b97\u53bf",
+        "PYNAME": "Shizong Xian",
+        "CLASS": "AI",
+        "ID": 2813,
+        "ADCODE93": 532227.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.60651089109462,
+          24.83026923955896
+        ]
+      },
+      "properties": {
+        "OBJECTID": 56,
+        "CNTYPT_": 2400.0,
+        "CNTYPT_ID": 1717.0,
+        "NAME": "\u660c\u5b81\u53bf",
+        "PYNAME": "Changning Xian",
+        "CLASS": "AI",
+        "ID": 2699,
+        "ADCODE93": 533025.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.29467299907839,
+          24.806858706326466
+        ]
+      },
+      "properties": {
+        "OBJECTID": 57,
+        "CNTYPT_": 2406.0,
+        "CNTYPT_ID": 1576.0,
+        "NAME": "\u6881\u6cb3\u53bf",
+        "PYNAME": "Lianghe Xian",
+        "CLASS": "AI",
+        "ID": 2561,
+        "ADCODE93": 533122.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.25964415169074,
+          24.760696765567218
+        ]
+      },
+      "properties": {
+        "OBJECTID": 58,
+        "CNTYPT_": 2414.0,
+        "CNTYPT_ID": 1777.0,
+        "NAME": "\u8def\u5357\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Lunan Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2819,
+        "ADCODE93": 530126.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.17699583203989,
+          24.73175889572059
+        ]
+      },
+      "properties": {
+        "OBJECTID": 59,
+        "CNTYPT_": 2419.0,
+        "CNTYPT_ID": 1733.0,
+        "NAME": "\u65bd\u7538\u53bf",
+        "PYNAME": "Shidian Xian",
+        "CLASS": "AI",
+        "ID": 2714,
+        "ADCODE93": 533022.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.93664997012223,
+          24.70672967636483
+        ]
+      },
+      "properties": {
+        "OBJECTID": 60,
+        "CNTYPT_": 2422.0,
+        "CNTYPT_ID": 1505.0,
+        "NAME": "\u76c8\u6c5f\u53bf",
+        "PYNAME": "Yingjiang Xian",
+        "CLASS": "AI",
+        "ID": 2493,
+        "ADCODE93": 533123.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.63962843837811,
+          24.693494486259965
+        ]
+      },
+      "properties": {
+        "OBJECTID": 61,
+        "CNTYPT_": 2423.0,
+        "CNTYPT_ID": 2051.0,
+        "NAME": "\u53cc\u67cf\u53bf",
+        "PYNAME": "Shuangbai Xian",
+        "CLASS": "AI",
+        "ID": 3027,
+        "ADCODE93": 532322.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.59947230955783,
+          24.672507855223557
+        ]
+      },
+      "properties": {
+        "OBJECTID": 62,
+        "CNTYPT_": 2426.0,
+        "CNTYPT_ID": 1692.0,
+        "NAME": "\u664b\u5b81\u53bf",
+        "PYNAME": "Jinning Xian",
+        "CLASS": "AI",
+        "ID": 2735,
+        "ADCODE93": 530122.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.91094383303539,
+          24.67242042673314
+        ]
+      },
+      "properties": {
+        "OBJECTID": 63,
+        "CNTYPT_": 2427.0,
+        "CNTYPT_ID": 1694.0,
+        "NAME": "\u6f84\u6c5f\u53bf",
+        "PYNAME": "Dengjiang Xian",
+        "CLASS": "AI",
+        "ID": 2736,
+        "ADCODE93": 532423.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.14951456989951,
+          24.67184312674152
+        ]
+      },
+      "properties": {
+        "OBJECTID": 64,
+        "CNTYPT_": 2428.0,
+        "CNTYPT_ID": 1696.0,
+        "NAME": "\u6613\u95e8\u53bf",
+        "PYNAME": "Yimen Xian",
+        "CLASS": "AI",
+        "ID": 2737,
+        "ADCODE93": 532426.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.91078590749339,
+          24.591039498365205
+        ]
+      },
+      "properties": {
+        "OBJECTID": 65,
+        "CNTYPT_": 2433.0,
+        "CNTYPT_ID": 1759.0,
+        "NAME": "\u51e4\u5e86\u53bf",
+        "PYNAME": "Fengqing Xian",
+        "CLASS": "AI",
+        "ID": 2739,
+        "ADCODE93": 533522.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.69022339183084,
+          24.589415195076526
+        ]
+      },
+      "properties": {
+        "OBJECTID": 66,
+        "CNTYPT_": 2434.0,
+        "CNTYPT_ID": 1607.0,
+        "NAME": "\u9f99\u9675\u53bf",
+        "PYNAME": "Longling Xian",
+        "CLASS": "AI",
+        "ID": 2591,
+        "ADCODE93": 533024.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.76243103960945,
+          24.531169783667224
+        ]
+      },
+      "properties": {
+        "OBJECTID": 67,
+        "CNTYPT_": 2439.0,
+        "CNTYPT_ID": 1796.0,
+        "NAME": "\u6cf8\u897f\u53bf",
+        "PYNAME": "Luxi Xian",
+        "CLASS": "AI",
+        "ID": 2837,
+        "ADCODE93": 532527.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.83607082508541,
+          24.45136440993798
+        ]
+      },
+      "properties": {
+        "OBJECTID": 68,
+        "CNTYPT_": 2449.0,
+        "CNTYPT_ID": 1933.0,
+        "NAME": "\u666f\u4e1c\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Jingdong Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2911,
+        "ADCODE93": 532724.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.12747019849564,
+          24.447840722335684
+        ]
+      },
+      "properties": {
+        "OBJECTID": 69,
+        "CNTYPT_": 2451.0,
+        "CNTYPT_ID": 1936.0,
+        "NAME": "\u4e91\u53bf",
+        "PYNAME": "Yun Xian",
+        "CLASS": "AI",
+        "ID": 2913,
+        "ADCODE93": 533523.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.58845037332071,
+          24.440757494758998
+        ]
+      },
+      "properties": {
+        "OBJECTID": 70,
+        "CNTYPT_": 2452.0,
+        "CNTYPT_ID": 1631.0,
+        "NAME": "\u6f5e\u897f\u53bf",
+        "PYNAME": "Luxi Xian",
+        "CLASS": "AI",
+        "ID": 2614,
+        "ADCODE93": 533121.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.43291025340551,
+          24.408605345456976
+        ]
+      },
+      "properties": {
+        "OBJECTID": 71,
+        "CNTYPT_": 2457.0,
+        "CNTYPT_ID": 1807.0,
+        "NAME": "\u5f25\u52d2\u53bf",
+        "PYNAME": "Mile Xian",
+        "CLASS": "AI",
+        "ID": 2847,
+        "ADCODE93": 532526.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.96234564375897,
+          24.364783235572588
+        ]
+      },
+      "properties": {
+        "OBJECTID": 72,
+        "CNTYPT_": 2458.0,
+        "CNTYPT_ID": 1526.0,
+        "NAME": "\u9647\u5ddd\u53bf",
+        "PYNAME": "Longchuan Xian",
+        "CLASS": "AI",
+        "ID": 2513,
+        "ADCODE93": 533124.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.74835906539755,
+          24.295450527129105
+        ]
+      },
+      "properties": {
+        "OBJECTID": 73,
+        "CNTYPT_": 2469.0,
+        "CNTYPT_ID": 1727.0,
+        "NAME": "\u6c5f\u5ddd\u53bf",
+        "PYNAME": "Jiangchuan Xian",
+        "CLASS": "AI",
+        "ID": 2767,
+        "ADCODE93": 532422.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.92740442181326,
+          24.196616119792054
+        ]
+      },
+      "properties": {
+        "OBJECTID": 74,
+        "CNTYPT_": 2473.0,
+        "CNTYPT_ID": 1734.0,
+        "NAME": "\u534e\u5b81\u53bf",
+        "PYNAME": "Huaning Xian",
+        "CLASS": "AI",
+        "ID": 2773,
+        "ADCODE93": 532425.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.39816883723825,
+          24.16547879784349
+        ]
+      },
+      "properties": {
+        "OBJECTID": 75,
+        "CNTYPT_": 2476.0,
+        "CNTYPT_ID": 1736.0,
+        "NAME": "\u5ce8\u5c71\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Eshan Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 2774,
+        "ADCODE93": 532427.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.75533927743442,
+          24.10534146559405
+        ]
+      },
+      "properties": {
+        "OBJECTID": 76,
+        "CNTYPT_": 2482.0,
+        "CNTYPT_ID": 1744.0,
+        "NAME": "\u901a\u6d77\u53bf",
+        "PYNAME": "Tonghai Xian",
+        "CLASS": "AI",
+        "ID": 2781,
+        "ADCODE93": 532424.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.07692881299783,
+          24.084855850457416
+        ]
+      },
+      "properties": {
+        "OBJECTID": 77,
+        "CNTYPT_": 2484.0,
+        "CNTYPT_ID": 1689.0,
+        "NAME": "\u7579\u753a\u5e02",
+        "PYNAME": "Wanding Shi",
+        "CLASS": "AH",
+        "ID": 2671,
+        "ADCODE93": 533101.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.98947010910393,
+          24.075138698413866
+        ]
+      },
+      "properties": {
+        "OBJECTID": 78,
+        "CNTYPT_": 2486.0,
+        "CNTYPT_ID": 2138.0,
+        "NAME": "\u65b0\u5e73\u5f5d\u65cf\u50a3\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Xinping Yizu Daizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 3113,
+        "ADCODE93": 532428.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.06166716730093,
+          24.0521014836483
+        ]
+      },
+      "properties": {
+        "OBJECTID": 79,
+        "CNTYPT_": 2489.0,
+        "CNTYPT_ID": 1969.0,
+        "NAME": "\u5e7f\u5357\u53bf",
+        "PYNAME": "Guangnan Xian",
+        "CLASS": "AI",
+        "ID": 3014,
+        "ADCODE93": 532627.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.19213057749135,
+          24.04818098818697
+        ]
+      },
+      "properties": {
+        "OBJECTID": 80,
+        "CNTYPT_": 2490.0,
+        "CNTYPT_ID": 1901.0,
+        "NAME": "\u4e18\u5317\u53bf",
+        "PYNAME": "Qiubei Xian",
+        "CLASS": "AI",
+        "ID": 2950,
+        "ADCODE93": 532626.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.25061778135904,
+          24.028619808647306
+        ]
+      },
+      "properties": {
+        "OBJECTID": 81,
+        "CNTYPT_": 2491.0,
+        "CNTYPT_ID": 1841.0,
+        "NAME": "\u6c38\u5fb7\u53bf",
+        "PYNAME": "Yongde Xian",
+        "CLASS": "AI",
+        "ID": 2820,
+        "ADCODE93": 533524.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.85901685839275,
+          24.011913798484954
+        ]
+      },
+      "properties": {
+        "OBJECTID": 82,
+        "CNTYPT_": 2492.0,
+        "CNTYPT_ID": 1542.0,
+        "NAME": "\u745e\u4e3d\u53bf",
+        "PYNAME": "Ruili Xian",
+        "CLASS": "AI",
+        "ID": 2528,
+        "ADCODE93": 533125.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.02635809980637,
+          23.881834944657157
+        ]
+      },
+      "properties": {
+        "OBJECTID": 83,
+        "CNTYPT_": 2501.0,
+        "CNTYPT_ID": 27.0,
+        "NAME": "\u9547\u5eb7\u53bf",
+        "PYNAME": "Zhenkang Xian",
+        "CLASS": "AI",
+        "ID": 1026,
+        "ADCODE93": 533525.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.08803215580036,
+          23.879311422761248
+        ]
+      },
+      "properties": {
+        "OBJECTID": 84,
+        "CNTYPT_": 2502.0,
+        "CNTYPT_ID": 98.0,
+        "NAME": "\u4e34\u6ca7\u53bf",
+        "PYNAME": "Lincang Xian",
+        "CLASS": "AI",
+        "ID": 1094,
+        "ADCODE93": 533521.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.88495048464159,
+          23.87107519959187
+        ]
+      },
+      "properties": {
+        "OBJECTID": 85,
+        "CNTYPT_": 2504.0,
+        "CNTYPT_ID": 100.0,
+        "NAME": "\u9547\u6c85\u5f5d\u65cf\u54c8\u5c3c\u65cf\u62c9\u795c\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Zhenyuan Yizu Hanizu Lahuzu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1095,
+        "ADCODE93": 532726.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.48799730696948,
+          23.71831761604784
+        ]
+      },
+      "properties": {
+        "OBJECTID": 86,
+        "CNTYPT_": 2513.0,
+        "CNTYPT_ID": 26.0,
+        "NAME": "\u77f3\u5c4f\u53bf",
+        "PYNAME": "Shiping Xian",
+        "CLASS": "AI",
+        "ID": 1026,
+        "ADCODE93": 532525.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.2335271843541,
+          23.71420927829496
+        ]
+      },
+      "properties": {
+        "OBJECTID": 87,
+        "CNTYPT_": 2515.0,
+        "CNTYPT_ID": 122.0,
+        "NAME": "\u5f00\u8fdc\u5e02",
+        "PYNAME": "Kaiyuan Shi",
+        "CLASS": "AH",
+        "ID": 1120,
+        "ADCODE93": 532502.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.61144353232515,
+          23.630545181735954
+        ]
+      },
+      "properties": {
+        "OBJECTID": 88,
+        "CNTYPT_": 2523.0,
+        "CNTYPT_ID": 311.0,
+        "NAME": "\u5bcc\u5b81\u53bf",
+        "PYNAME": "Funing Xian",
+        "CLASS": "AI",
+        "ID": 1313,
+        "ADCODE93": 532628.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.82203847689777,
+          23.623863189380586
+        ]
+      },
+      "properties": {
+        "OBJECTID": 89,
+        "CNTYPT_": 2524.0,
+        "CNTYPT_ID": 36.0,
+        "NAME": "\u5efa\u6c34\u53bf",
+        "PYNAME": "Jianshui Xian",
+        "CLASS": "AI",
+        "ID": 1035,
+        "ADCODE93": 532524.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.33189785631907,
+          23.612386001173206
+        ]
+      },
+      "properties": {
+        "OBJECTID": 90,
+        "CNTYPT_": 2525.0,
+        "CNTYPT_ID": 224.0,
+        "NAME": "\u781a\u5c71\u53bf",
+        "PYNAME": "Yanshan Xian",
+        "CLASS": "AI",
+        "ID": 1230,
+        "ADCODE93": 532622.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.00617056055682,
+          23.603319561677836
+        ]
+      },
+      "properties": {
+        "OBJECTID": 91,
+        "CNTYPT_": 2527.0,
+        "CNTYPT_ID": 38.0,
+        "NAME": "\u5143\u6c5f\u54c8\u5c3c\u65cf\u5f5d\u65cf\u50a3\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Yuanjiang Hanizu Yizu Daizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1036,
+        "ADCODE93": 532429.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.3962144736746,
+          23.53979336458741
+        ]
+      },
+      "properties": {
+        "OBJECTID": 92,
+        "CNTYPT_": 2533.0,
+        "CNTYPT_ID": 49.0,
+        "NAME": "\u803f\u9a6c\u50a3\u65cf\u4f64\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Gengma Daizu Vazu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1047,
+        "ADCODE93": 533527.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.69936613796574,
+          23.498395529218385
+        ]
+      },
+      "properties": {
+        "OBJECTID": 93,
+        "CNTYPT_": 2534.0,
+        "CNTYPT_ID": 127.0,
+        "NAME": "\u666f\u8c37\u50a3\u65cf\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Jinggu Daizu Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1121,
+        "ADCODE93": 532725.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.82598988555748,
+          23.471550682107534
+        ]
+      },
+      "properties": {
+        "OBJECTID": 94,
+        "CNTYPT_": 2538.0,
+        "CNTYPT_ID": 57.0,
+        "NAME": "\u53cc\u6c5f\u62c9\u795c\u65cf\u4f64\u65cf\u5e03\u6717\u65cf\u50a3\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Shuangjiang Lahuzu Vazu Blangzu Daizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1054,
+        "ADCODE93": 533526.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.66817924551628,
+          23.441968131465558
+        ]
+      },
+      "properties": {
+        "OBJECTID": 95,
+        "CNTYPT_": 2541.0,
+        "CNTYPT_ID": 237.0,
+        "NAME": "\u897f\u7574\u53bf",
+        "PYNAME": "Xichou Xian",
+        "CLASS": "AI",
+        "ID": 1242,
+        "ADCODE93": 532623.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.69437930291679,
+          23.435343344984517
+        ]
+      },
+      "properties": {
+        "OBJECTID": 96,
+        "CNTYPT_": 2543.0,
+        "CNTYPT_ID": 195.0,
+        "NAME": "\u58a8\u6c5f\u54c8\u5c3c\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Mojiang Hanizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1188,
+        "ADCODE93": 532723.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.23524100439124,
+          23.375465909606987
+        ]
+      },
+      "properties": {
+        "OBJECTID": 97,
+        "CNTYPT_": 2550.0,
+        "CNTYPT_ID": 247.0,
+        "NAME": "\u6587\u5c71\u53bf",
+        "PYNAME": "Wenshan Xian",
+        "CLASS": "AI",
+        "ID": 1251,
+        "ADCODE93": 532621.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.41861986085235,
+          23.374255707240593
+        ]
+      },
+      "properties": {
+        "OBJECTID": 98,
+        "CNTYPT_": 2551.0,
+        "CNTYPT_ID": 60.0,
+        "NAME": "\u7ea2\u6cb3\u53bf",
+        "PYNAME": "Honghe Xian",
+        "CLASS": "AI",
+        "ID": 1057,
+        "ADCODE93": 532529.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.39228365142782,
+          23.36928283143584
+        ]
+      },
+      "properties": {
+        "OBJECTID": 99,
+        "CNTYPT_": 2553.0,
+        "CNTYPT_ID": 154.0,
+        "NAME": "\u8499\u81ea\u53bf",
+        "PYNAME": "Mengzi Xian",
+        "CLASS": "AI",
+        "ID": 1152,
+        "ADCODE93": 532522.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.7424515466908,
+          23.167377906932302
+        ]
+      },
+      "properties": {
+        "OBJECTID": 100,
+        "CNTYPT_": 2568.0,
+        "CNTYPT_ID": 80.0,
+        "NAME": "\u5143\u9633\u53bf",
+        "PYNAME": "Yuanyang Xian",
+        "CLASS": "AI",
+        "ID": 1076,
+        "ADCODE93": 532528.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.24503509237337,
+          23.152466270847526
+        ]
+      },
+      "properties": {
+        "OBJECTID": 101,
+        "CNTYPT_": 2571.0,
+        "CNTYPT_ID": 84.0,
+        "NAME": "\u6ca7\u6e90\u4f64\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Cangyuan Vazu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1080,
+        "ADCODE93": 533528.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.69118939698404,
+          23.121576463005795
+        ]
+      },
+      "properties": {
+        "OBJECTID": 102,
+        "CNTYPT_": 2575.0,
+        "CNTYPT_ID": 273.0,
+        "NAME": "\u9ebb\u6817\u5761\u53bf",
+        "PYNAME": "Malipo Xian",
+        "CLASS": "AI",
+        "ID": 1276,
+        "ADCODE93": 532624.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.03708770235994,
+          23.06620691707161
+        ]
+      },
+      "properties": {
+        "OBJECTID": 103,
+        "CNTYPT_": 2579.0,
+        "CNTYPT_ID": 214.0,
+        "NAME": "\u666e\u6d31\u54c8\u5c3c\u65cf\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Pu'er Hanizu Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1206,
+        "ADCODE93": 532722.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.3875377672336,
+          23.012248205053936
+        ]
+      },
+      "properties": {
+        "OBJECTID": 104,
+        "CNTYPT_": 2585.0,
+        "CNTYPT_ID": 278.0,
+        "NAME": "\u9a6c\u5173\u53bf",
+        "PYNAME": "Maguan Xian",
+        "CLASS": "AI",
+        "ID": 1281,
+        "ADCODE93": 532625.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.40155104349896,
+          22.999647702478057
+        ]
+      },
+      "properties": {
+        "OBJECTID": 105,
+        "CNTYPT_": 2587.0,
+        "CNTYPT_ID": 523.0,
+        "NAME": "\u7eff\u6625\u53bf",
+        "PYNAME": "Luchun Xian",
+        "CLASS": "AI",
+        "ID": 1518,
+        "ADCODE93": 532531.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.67891678628837,
+          22.98548914247283
+        ]
+      },
+      "properties": {
+        "OBJECTID": 106,
+        "CNTYPT_": 2589.0,
+        "CNTYPT_ID": 554.0,
+        "NAME": "\u5c4f\u8fb9\u82d7\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Pingbian Miaozu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1548,
+        "ADCODE93": 532523.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.97520981595972,
+          22.79280934013866
+        ]
+      },
+      "properties": {
+        "OBJECTID": 107,
+        "CNTYPT_": 2601.0,
+        "CNTYPT_ID": 285.0,
+        "NAME": "\u601d\u8305\u53bf",
+        "PYNAME": "Simao Xian",
+        "CLASS": "AI",
+        "ID": 1274,
+        "ADCODE93": 532721.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.22188944558076,
+          22.786716392021333
+        ]
+      },
+      "properties": {
+        "OBJECTID": 108,
+        "CNTYPT_": 2602.0,
+        "CNTYPT_ID": 569.0,
+        "NAME": "\u91d1\u5e73\u82d7\u65cf\u7476\u65cf\u50a3\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Jinping Miaozu Yaozu Daizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1562,
+        "ADCODE93": 532530.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.46075878603983,
+          22.738987089447107
+        ]
+      },
+      "properties": {
+        "OBJECTID": 109,
+        "CNTYPT_": 2608.0,
+        "CNTYPT_ID": 234.0,
+        "NAME": "\u897f\u76df\u4f64\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Ximeng Vazu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1225,
+        "ADCODE93": 532730.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.86215628740501,
+          22.592291939124607
+        ]
+      },
+      "properties": {
+        "OBJECTID": 110,
+        "CNTYPT_": 2619.0,
+        "CNTYPT_ID": 348.0,
+        "NAME": "\u6c5f\u57ce\u54c8\u5c3c\u65cf\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Jiangcheng Hanizu Yizu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1336,
+        "ADCODE93": 532727.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.92949635986957,
+          22.564451729586267
+        ]
+      },
+      "properties": {
+        "OBJECTID": 111,
+        "CNTYPT_": 2622.0,
+        "CNTYPT_ID": 242.0,
+        "NAME": "\u6f9c\u6ca7\u62c9\u795c\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Lancang Lahuzu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1233,
+        "ADCODE93": 532729.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.95893031026611,
+          22.518131893959037
+        ]
+      },
+      "properties": {
+        "OBJECTID": 112,
+        "CNTYPT_": 2625.0,
+        "CNTYPT_ID": 580.0,
+        "NAME": "\u6cb3\u53e3\u7476\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Hekou Yaozu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1572,
+        "ADCODE93": 532532.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.59177476849572,
+          22.33941687471247
+        ]
+      },
+      "properties": {
+        "OBJECTID": 113,
+        "CNTYPT_": 2632.0,
+        "CNTYPT_ID": 260.0,
+        "NAME": "\u5b5f\u8fde\u50a3\u65cf\u62c9\u795c\u65cf\u4f64\u65cf\u81ea\u6cbb\u53bf",
+        "PYNAME": "Menglian Daizu Lahuzu Vazu Zizhixian",
+        "CLASS": "AI",
+        "ID": 1250,
+        "ADCODE93": 532728.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.79384590482977,
+          22.01238486150055
+        ]
+      },
+      "properties": {
+        "OBJECTID": 114,
+        "CNTYPT_": 2648.0,
+        "CNTYPT_ID": 327.0,
+        "NAME": "\u666f\u6d2a\u53bf",
+        "PYNAME": "Jinghong Xian",
+        "CLASS": "AI",
+        "ID": 1316,
+        "ADCODE93": 532821.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.45263512474594,
+          21.96730937010119
+        ]
+      },
+      "properties": {
+        "OBJECTID": 115,
+        "CNTYPT_": 2650.0,
+        "CNTYPT_ID": 375.0,
+        "NAME": "\u52d0\u6d77\u53bf",
+        "PYNAME": "Menghai Xian",
+        "CLASS": "AI",
+        "ID": 1361,
+        "ADCODE93": 532822.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.56224616285107,
+          21.49014176650678
+        ]
+      },
+      "properties": {
+        "OBJECTID": 116,
+        "CNTYPT_": 2661.0,
+        "CNTYPT_ID": 431.0,
+        "NAME": "\u52d0\u814a\u53bf",
+        "PYNAME": "Mengla Xian",
+        "CLASS": "AI",
+        "ID": 1416,
+        "ADCODE93": 532823.0
+      }
+    }
+  ]
+}

@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MyGIS;
 
-namespace Lesson_8
+namespace Lesson_12
 {
     public partial class Form1 : Form
     {
         GISLayer layer = null;
         GISView view = null;
+        Bitmap backwindow;
         public Form1()
         {
             InitializeComponent();
@@ -57,9 +58,26 @@ namespace Lesson_8
         }
         private void UpdateMap()
         {
+            //如果窗口被最小化了，就不再进行绘制
+            if (ClientRectangle.Width * ClientRectangle.Height == 0)
+            {
+                return;
+            }
+            //确保当前view的地图窗口尺寸是正确的
+            view.UpdateRectangle(ClientRectangle);
+            //根据最新的地图窗口尺寸建立背景窗口
+            if (backwindow != null)
+            {
+                backwindow.Dispose();
+            }
+            backwindow = new Bitmap(ClientRectangle.Width, ClientRectangle.Height);
+            //再背景窗口上绘图
+            Graphics g = Graphics.FromImage(backwindow);
+            g.FillRectangle(new SolidBrush(Color.Black),ClientRectangle);
+            layer.draw(g, view);
+            //把背景窗口绘制到前景窗口上
             Graphics graphics = CreateGraphics();
-            graphics.FillRectangle(new SolidBrush(Color.Pink), ClientRectangle);
-            layer.draw(graphics, view);
+            graphics.DrawImage(backwindow, 0, 0);
         }
 
         private void Form1_Click(object sender, EventArgs e)
@@ -98,6 +116,19 @@ namespace Lesson_8
             layer = GISMyFile.ReadFile(@"..\..\..\Data\MyGISFile\mygisfile.gisfile");
             MessageBox.Show("read" + layer.FeatureCount() + "object");
             view.UpdateExtent(layer.Extent);
+            UpdateMap();
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            if (backwindow != null)
+            {
+                e.Graphics.DrawImage(backwindow,0,0);
+            }
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
             UpdateMap();
         }
     }

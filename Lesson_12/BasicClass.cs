@@ -236,6 +236,14 @@ namespace MyGIS
             upright.CopyFrom(extent.upright);
             bottomleft.CopyFrom(extent.bottomleft);
         }
+        public bool lnsertectOrNot(GISExtent extent)
+        {
+            return !(getMaxX() < extent.getMinX() || getMinX() > extent.getMaxX() || getMaxY() < extent.getMinY() || getMinY() > extent.getMaxY());
+        }
+        public GISVertex getCenter()
+        {
+            return new GISVertex((upright.x + bottomleft.x)/2 , (upright.y + bottomleft.y)/2);
+        }
     }
     public class GISView
     {
@@ -265,6 +273,13 @@ namespace MyGIS
             MapH = CurrentMapExtent.getHeight();
             ScaleX = MapW / WinW;
             ScaleY = MapH / WinH;
+            ScaleX = Math.Max(ScaleX, ScaleY);
+            ScaleY = ScaleX;
+            MapW = MapWindowSize.Width * ScaleX;
+            MapH = MapWindowSize.Height * ScaleY;
+            GISVertex center = CurrentMapExtent.getCenter();
+            MapMinX = center.x - MapW / 2;
+            MapMinY = center.y - MapH / 2;
         }
         public Point ToScreenPoint(GISVertex onevertex)
         {
@@ -287,6 +302,15 @@ namespace MyGIS
         {
             CurrentMapExtent.CopyFrom(extent);
             Update(CurrentMapExtent, MapWindowSize);
+        }
+        public void UpdateRectangle(Rectangle rect)
+        {
+            MapWindowSize = rect;
+            Update(CurrentMapExtent, MapWindowSize);
+        }
+        public GISExtent getRealExtent()
+        {
+            return new GISExtent(MapMinX,MapMinX+MapW,MapMinY, MapMinY+MapH);
         }
     }
     public enum GISMapAction
@@ -503,8 +527,10 @@ namespace MyGIS
         }
         public void draw(Graphics graphics, GISView view)
         {
+            GISExtent extent = view.getRealExtent();
             for (int i = 0; i < Features.Count; i++)
             {
+                if(extent.lnsertectOrNot(Features[i].spatialpart.extent))
                 Features[i].draw(graphics, view, DrawAttributeOrNot, LabelIndex);
             }
         }
