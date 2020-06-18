@@ -39,6 +39,10 @@ namespace MyGIS
             x = br.ReadDouble();
             y = br.ReadDouble();
         }
+        public bool IsSame(GISVertex vertex)
+        {
+            return x == vertex.x && y == vertex.y;
+        }
     }
     public class GISPoint : GISSpatial
     {
@@ -47,10 +51,14 @@ namespace MyGIS
             centroid = onevertex;
             extent = new GISExtent(onevertex, onevertex);
         }
-        public override void draw(Graphics graphics, GISView view)
+        public override void draw(Graphics graphics, GISView view, bool Selected)
         {
             Point screenpoint = view.ToScreenPoint(centroid);
-            graphics.FillEllipse(new SolidBrush(Color.Red), new Rectangle(screenpoint.X - 3, screenpoint.Y - 3, 6, 6));
+            graphics.FillEllipse(new SolidBrush(Selected ? GISConst.SelectedPointColor : GISConst.PointColor),
+                                            new Rectangle(screenpoint.X - GISConst.PointSize, screenpoint.Y - GISConst.PointSize,
+                                            GISConst.PointSize * 2, GISConst.PointSize * 2));
+            //Point screenpoint = view.ToScreenPoint(centroid);
+            //graphics.FillEllipse(new SolidBrush(Color.Red), new Rectangle(screenpoint.X - 3, screenpoint.Y - 3, 6, 6));
         }
         public double Distance(GISVertex anothervertex)
         {
@@ -68,10 +76,12 @@ namespace MyGIS
             extent = GISTools.CalculateExtent(_vertexs);
             Length = GISTools.CalculateLength(_vertexs);
         }
-        public override void draw(Graphics graphics, GISView view)
+        public override void draw(Graphics graphics, GISView view, bool Selected)
         {
+            //Point[] points = GISTools.GetScreenPoints(Vertexs, view);
+            //graphics.DrawLines(new Pen(Color.Red, 2), points);
             Point[] points = GISTools.GetScreenPoints(Vertexs, view);
-            graphics.DrawLines(new Pen(Color.Red, 2), points);
+            graphics.DrawLines(new Pen(Selected ? GISConst.SelectedLineColor : GISConst.LineColor, GISConst.LineWidth), points);
         }
         public GISVertex FromNode()
         {
@@ -102,17 +112,64 @@ namespace MyGIS
             extent = GISTools.CalculateExtent(_vertexs);
             Area = GISTools.CalculateArea(_vertexs);
         }
-        public override void draw(Graphics graphics, GISView view)
+        public override void draw(Graphics graphics, GISView view,bool Selected)
         {
             Point[] points = GISTools.GetScreenPoints(Vertexs, view);
-            graphics.FillPolygon(new SolidBrush(Color.Yellow),points);
-            graphics.DrawPolygon(new Pen(Color.White,2),points);
+            graphics.FillPolygon(new SolidBrush(Selected ? GISConst.SelectedPolygonFillColor : GISConst.PolygonFillColor), points);
+            graphics.DrawPolygon(new Pen(GISConst.PolygonBoundaryColor,GISConst.PolygonBoundaryWidth), points);
+        }
+        public bool Include(GISVertex vertex)
+        {
+            int count = 0;
+            for (int i = 0; i < Vertexs.Count; i++)
+            {
+                //满足情况3，直接返回false
+                if (Vertexs[i].IsSame(vertex))
+                    return false;
+                //由序号为i及next的两个节点构成一条线段，一般情况下next为i+1
+                //而针对最后一条线段，i为Vertexs.Count -1 ,next为0
+                int next = (i + 1) % Vertexs.Count;
+                //确定线段的坐标极值
+                double minX = Math.Min(Vertexs[i].x, Vertexs[next].x);
+                double minY = Math.Min(Vertexs[i].y, Vertexs[next].y);
+                double maxX = Math.Max(Vertexs[i].x, Vertexs[next].x);
+                double maxY = Math.Max(Vertexs[i].y, Vertexs[next].y);
+                //如果线段是平行于射线的
+                if (minY == maxY)
+                {
+                    //满足情况2，直接返回false
+                    if (minY == vertex.y && vertex.x >= minX && vertex.x <= maxX)
+                        return false;
+                    //满足情况1或者射线与线段平行无交点
+                    else
+                        continue;
+                }
+                //点在线段坐标极值之外，不可能有交点
+                if (vertex.x > maxX || vertex.y > maxY || vertex.y < minY)
+                    continue;
+                //计算交点横坐标，纵坐标无需计算，就是vertex.y
+                double X0 = Vertexs[i].x + (vertex.y - Vertexs[i].y) * (Vertexs[next].x - Vertexs[i].x) / (Vertexs[next].y - Vertexs[i].y);
+                //交点在射线反方向，按无交点计算
+                if (X0 < vertex.x)
+                    continue;
+                //交点即为vertex，且在线段上，按不包括处理
+                if (X0 == vertex.x)
+                    return false;
+                // 射线穿过线段下端点，不计数
+                if (vertex.y == minY)
+                    continue;
+                //其他情况下，交点数加一
+                count++;
+            }
+            //根据交点数量确定面是否包括点
+            return count % 2 != 0;
         }
     }
     public class GISFeature
     {
         public GISSpatial spatialpart;
         public GISAttribute attributepart;
+        public bool Selected = false;
         public GISFeature(GISSpatial spatial, GISAttribute attribute)
         {
             spatialpart = spatial;
@@ -120,7 +177,7 @@ namespace MyGIS
         }
         public void draw(Graphics graphics, GISView view, bool DrawAttributeOrNot, int index)
         {
-            spatialpart.draw(graphics, view);
+            spatialpart.draw(graphics, view, Selected);
             if (DrawAttributeOrNot)
             {
                 attributepart.draw(graphics, view, spatialpart.centroid, index);
@@ -156,7 +213,7 @@ namespace MyGIS
     {
         public GISVertex centroid;//空间实体的中心点
         public GISExtent extent;//空间范围（最小外接矩形）
-        public abstract void draw(Graphics graphics, GISView view);
+        public abstract void draw(Graphics graphics, GISView view, bool Selected);
     }
     public class GISExtent
     {
@@ -511,6 +568,7 @@ namespace MyGIS
         public SHAPETYPE ShapeType;
         List<GISFeature> Features = new List<GISFeature>();
         public List<GISField> Fields;
+        public List<GISFeature> Selection = new List<GISFeature>();
         public GISLayer(string _name, SHAPETYPE _shapetype, GISExtent _extent, List<GISField> _fields)
         {
             Name = _name;
@@ -546,6 +604,36 @@ namespace MyGIS
         public List<GISFeature> GetAllFeatures()
         {
             return Features;
+        }
+        public SelectResult Select(GISVertex vertex, GISView view)
+        {
+            GISSelect gs = new GISSelect();
+            SelectResult sr = gs.Select(vertex, Features, ShapeType, view);
+            if (sr== SelectResult.OK)
+            {
+                if (ShapeType == SHAPETYPE.polygon)
+                {
+                    for (int i = 0; i < gs.SelectedFeatures.Count; i++)
+                        if (gs.SelectedFeatures[i].Selected == false)
+                        {
+                            gs.SelectedFeatures[i].Selected = true;
+                            Selection.Add(gs.SelectedFeatures[i]);
+                        }
+                }
+                else
+                    if (gs.SelectedFeature.Selected == false)
+                {
+                    gs.SelectedFeature.Selected = true;
+                    Selection.Add(gs.SelectedFeature);
+                }
+            }
+            return sr;
+        }
+        public void ClearSelection()
+        {
+            for (int i = 0; i < Selection.Count; i++)
+                Selection[i].Selected = false;
+            Selection.Clear();
         }
     }
     public class GISTools
@@ -921,6 +1009,7 @@ public enum SelectResult
     public class GISSelect
     {
         public GISFeature SelectedFeature = null;
+        public List<GISFeature> SelectedFeatures = new List<GISFeature>();
         public SelectResult Select(GISVertex vertex, List<GISFeature> features, SHAPETYPE shapetype, GISView view)
         {
             if (features.Count == 0)
@@ -1020,11 +1109,30 @@ public enum SelectResult
         }
         public SelectResult SelectPolygon(GISVertex vertex, List<GISFeature> features, GISView view, GISExtent MinSelectExtent)
         {
-            return SelectResult.TooFar;
+            SelectedFeatures.Clear();
+            for (int i = 0; i < features.Count; i++)
+            {
+                if (MinSelectExtent.InsertectOrNot(features[i].spatialpart.extent) == false)
+                    continue;
+                GISPolygon polygon = (GISPolygon)(features[i].spatialpart);
+                if (polygon.Include(vertex))
+                    SelectedFeatures.Add(features[i]);
+            }
+            return (SelectedFeatures.Count > 0) ? SelectResult.OK : SelectResult.TooFar;
         }
     }
     public class GISConst
     {
-       public static double MinScreenDistance = 5;
+        public static double MinScreenDistance = 5;
+        public static Color PointColor = Color.Pink;
+        public static int PointSize = 3;
+        public static Color LineColor = Color.CadetBlue;
+        public static int LineWidth = 2;
+        public static Color PolygonBoundaryColor = Color.White;
+        public static Color PolygonFillColor = Color.Gray;
+        public static int PolygonBoundaryWidth = 2;
+        public static Color SelectedPointColor = Color.Red;
+        public static Color SelectedLineColor = Color.Blue;
+        public static Color SelectedPolygonFillColor = Color.Yellow;
     }
 }

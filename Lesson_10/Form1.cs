@@ -106,11 +106,32 @@ namespace Lesson_10
             if (layer == null)
                 return;
             GISVertex v = view.ToMapVertex(new Point(e.X, e.Y));
-            GISSelect gs = new GISSelect();
-            if (gs.Select(v,layer.GetAllFeatures(), layer.ShapeType, view) == SelectResult.OK)
+            SelectResult sr = layer.Select(v,view);
+            if (sr == SelectResult.OK)
             {
-                MessageBox.Show(gs.SelectedFeature.getAttribute(0).ToString());
+                UpdateMap();
+                toolStripStatusLabel1.Text = layer.Selection.Count.ToString();
             }
+            //if (layer == null)
+            //    return;
+            //GISVertex v = view.ToMapVertex(new Point(e.X, e.Y));
+            //GISSelect gs = new GISSelect();
+            //if (gs.Select(v,layer.GetAllFeatures(), layer.ShapeType, view) == SelectResult.OK)
+            //{
+            //    if (layer.ShapeType == SHAPETYPE.polygon)
+            //        MessageBox.Show(gs.SelectedFeatures[0].getAttribute(0).ToString());
+            //    else
+            //       MessageBox.Show(gs.SelectedFeature.getAttribute(0).ToString());
+            //}
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (layer == null)
+                return;
+            layer.ClearSelection();
+            UpdateMap();
+            toolStripStatusLabel1.Text = "0";
         }
     }
 }
