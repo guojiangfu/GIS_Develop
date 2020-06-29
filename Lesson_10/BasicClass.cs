@@ -1010,6 +1010,7 @@ public enum SelectResult
     {
         public GISFeature SelectedFeature = null;
         public List<GISFeature> SelectedFeatures = new List<GISFeature>();
+        public static List<int> Featureindex = new List<int>();
         public SelectResult Select(GISVertex vertex, List<GISFeature> features, SHAPETYPE shapetype, GISView view)
         {
             if (features.Count == 0)
@@ -1116,7 +1117,10 @@ public enum SelectResult
                     continue;
                 GISPolygon polygon = (GISPolygon)(features[i].spatialpart);
                 if (polygon.Include(vertex))
+                {
                     SelectedFeatures.Add(features[i]);
+                    Featureindex.Add(i);
+                }
             }
             return (SelectedFeatures.Count > 0) ? SelectResult.OK : SelectResult.TooFar;
         }
@@ -1124,7 +1128,7 @@ public enum SelectResult
     public class GISConst
     {
         public static double MinScreenDistance = 5;
-        public static Color PointColor = Color.Pink;
+        public static Color PointColor = Color.Green;
         public static int PointSize = 3;
         public static Color LineColor = Color.CadetBlue;
         public static int LineWidth = 2;

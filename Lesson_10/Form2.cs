@@ -31,7 +31,11 @@ namespace Lesson_10
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            int x = GISSelect.Featureindex.Count;
+            for (int i = 0; i < x; i++)
+            {
+                dataGridView1.Rows[GISSelect.Featureindex[i]].Selected = true;
+            }
         }
     }
 }
